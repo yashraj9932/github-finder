@@ -22,7 +22,7 @@ const App = () => {
                 <Route
                   exact
                   path="/"
-                  render={props => (
+                  render={(props) => (
                     <Fragment>
                       <Alert />
                       <Home />

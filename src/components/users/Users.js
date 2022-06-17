@@ -12,7 +12,7 @@ const Users = () => {
   } else {
     return (
       <div style={sty}>
-        {users.map(user => {
+        {users.map((user) => {
           return <UserItem key={user.id} user={user} />;
         })}
       </div>
@@ -23,7 +23,7 @@ const Users = () => {
 const sty = {
   display: "grid",
   gridTemplateColumns: "repeat(3,1fr)",
-  gridGap: "1rem"
+  gridGap: "1rem",
 };
 
 export default Users;

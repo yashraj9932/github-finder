@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function Navbar({ icon, title }) {
+const Navbar = ({ icon, title }) => {
   return (
     <nav className="navbar bg-dark">
       <h1>
@@ -18,14 +18,14 @@ function Navbar({ icon, title }) {
       </ul>
     </nav>
   );
-}
+};
 Navbar.defaultProps = {
   title: "Github Finder",
-  icon: "fab fa-github"
+  icon: "fab fa-github",
 };
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired
+  icon: PropTypes.string.isRequired,
 };
 
 export default Navbar;
